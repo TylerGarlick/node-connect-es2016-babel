@@ -1,0 +1,24 @@
+{
+  "name": "node-connect-es2016-babel",
+  "version": "1.0.0",
+  "main": "build/index.js",
+  "scripts": {
+    "start": "node build",
+    "build": "babel src -d build",
+    "prepublish": "npm run build",
+    "test": "_mocha test/**/*.tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TylerGarlick/node-connect-es2016-babel.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.7.5",
+    "babel-preset-pundits": "^1.0.4",
+    "babel-register": "^6.7.2",
+    "code": "^2.2.0",
+    "istanbul": "^0.4.3",
+    "mocha": "^2.4.5"
+  }
+}
